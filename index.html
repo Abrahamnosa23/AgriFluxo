@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgriFluxo — Powering the Flow of Agriculture</title>
+  <meta name="description" content="AgriFluxo connects farmers with trusted transporters for fast, low-waste movement of produce from farm → storage → market. Join our waitlist." />
+  <meta name="keywords" content="agrifluxo, agri logistics, farm transport, farm to market, reduce spoilage" />
+  <meta name="author" content="Abraham Aigbokhan — AgriFluxo" />
+  <meta name="theme-color" content="#1F8A5F">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AgriFluxo — Powering the Flow of Agriculture" />
+  <meta property="og:description" content="On-demand, optimized transport for farmers: move produce faster, reduce spoilage, and connect to markets." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="wrap" id="top">
+    <header>
+      <div class="brand">
+        <div class="logo">AF</div>
+        <div>
+          <h1>AgriFluxo</h1>
+          <div class="tagline">Powering the flow of agriculture</div>
+        </div>
+      </div>
+      <nav>
+        <a class="secondary btn" href="#features">Features</a>
+        <a class="secondary btn" href="#impact">Impact</a>
+        <button class="btn" id="joinWait">Join Waitlist</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2 class="headline">Move produce faster. Reduce spoilage. Get paid more.</h2>
+        <p class="sub">On-demand, optimized transport for farmers—connect with verified transporters and warehouse partners to move harvests from farm → storage → market.</p>
+
+        <form id="waitlistForm" class="form card">
+          <div class="form-row">
+            <select id="role" class="select">
+              <option value="farmer">I'm a Farmer</option>
+              <option value="transporter">Transporter</option>
+              <option value="warehouse">Warehouse</option>
+              <option value="buyer">Buyer/Trader</option>
+            </select>
+            <input id="name" class="input" type="text" placeholder="Full name" required>
+          </div>
+
+          <div class="form-row">
+            <input id="phone" class="input" type="tel" placeholder="Phone (e.g. +234...)" required>
+            <input id="location" class="input" type="text" placeholder="Location (village/town)">
+            <input id="email" class="input" type="email" placeholder="Email (optional)">
+            <button class="btn" type="submit">Join Waitlist ➜</button>
+          </div>
+          <div class="small">No spam. We’ll only contact you about launch and pilot opportunities.</div>
+        </form>
+      </div>
+
+      <aside class="visual">
+        <div class="mock">
+          <svg width="90%" height="90%" viewBox="0 0 600 360">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#1F8A5F"/>
+                <stop offset="1" stop-color="#21b07a"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="600" height="360" rx="12" fill="#f7fff8"/>
+            <g transform="translate(30,24)">
+              <circle cx="40" cy="40" r="24" fill="#fff" stroke="#ccefe0" />
+              <text x="40" y="46" text-anchor="middle" font-size="10" fill="#1F8A5F">Farm</text>
+              <circle cx="520" cy="260" r="24" fill="#fff" stroke="#ffecd1"/>
+              <text x="520" y="266" text-anchor="middle" font-size="10" fill="#c76a00">Market</text>
+              <path d="M64 44 C160 20, 300 30, 380 70 S520 220, 500 248" fill="none" stroke="url(#g1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+              <rect id="truck" x="120" y="46" rx="6" ry="6" width="36" height="20" fill="#1F8A5F"></rect>
+              <text id="truckLabel" x="138" y="61" font-size="10" text-anchor="middle" fill="#fff">AF</text>
+            </g>
+          </svg>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div>© <strong>AgriFluxo</strong> <span id="year"></span></div>
+      <div>Built for farmers • <span class="green">Join the pilot</span></div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
