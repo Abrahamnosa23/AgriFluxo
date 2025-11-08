@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgriFluxus — Bolt for Farm Produce | On-demand Agri Logistics</title>
+  <meta name="description" content="AgriFluxus: Bolt for Farm Produce. On-demand logistics to eliminate spoilage and maximize farmer profit. Instant booking, verified drivers, GPS tracking, secure payment." />
+  <meta name="theme-color" content="#2B8A47">
+
+  <!-- OpenGraph / Twitter -->
+  <meta property="og:title" content="AgriFluxus — Bolt for Farm Produce" />
+  <meta property="og:description" content="Connect instantly with verified transporters for safe, affordable, real-time tracked delivery from farm to market." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  { "@context":"https://schema.org", "@type":"WebSite", "name":"AgriFluxus", "url":"https://yourdomain.com", "potentialAction":{"@type":"SearchAction","target":"https://yourdomain.com/?s={search_term_string}","query-input":"required name=search_term_string"} }
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">AF</div>
+        <div>
+          <h1 class="brand-title">AgriFluxus</h1>
+          <p class="brand-tag">Bolt for Farm Produce — On-demand Agri Logistics</p>
+        </div>
+      </div>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#how" class="nav-link">How it works</a>
+        <a href="#advantage" class="nav-link">Why AgriFluxus</a>
+        <a href="#impact" class="nav-link">Impact</a>
+        <button class="btn primary" id="downloadCTA">Start Transporting</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top-hero" aria-labelledby="hero-headline">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2 id="hero-headline" class="hero-title">AgriFluxus: Bolt for Farm Produce. On-Demand Logistics to Eliminate Spoilage and Maximize Farmer Profit.</h2>
+          <p class="hero-sub">Connect instantly with verified transporters (motorbikes, vans, trucks) for safe, affordable, and real-time tracked delivery from farm → warehouse → market.</p>
+
+          <div class="hero-ctas">
+            <a class="btn primary large" id="downloadApp" href="#download-mock" role="button" aria-label="Download the AgriFluxus App">Start Transporting: Download the App</a>
+            <a class="btn secondary" id="wholesaleCTA" href="#wholesale">Inquire About Wholesale & Subscription Plans</a>
+          </div>
+
+          <ul class="hero-bullets">
+            <li><strong>Instant Booking</strong> — post load, choose vehicle, schedule pickup</li>
+            <li><strong>Verified Transporters</strong> — identity & vehicle checks</li>
+            <li><strong>Real-Time GPS Tracking</strong> — full visibility from pickup to drop</li>
+          </ul>
+
+          <form id="leadForm" class="lead-form" aria-label="Join AgriFluxus waitlist">
+            <select id="role" class="input small" aria-label="Role">
+              <option value="farmer">I'm a Farmer</option>
+              <option value="transporter">Transporter</option>
+              <option value="warehouse">Warehouse</option>
+              <option value="buyer">Buyer / Trader</option>
+            </select>
+            <input id="name" class="input" type="text" placeholder="Full name" required />
+            <input id="phone" class="input" type="tel" placeholder="Phone (e.g. +234...)" required />
+            <button class="btn primary" type="submit">Join Waitlist</button>
+            <p class="form-note">No spam — only launch & pilot updates.</p>
+          </form>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <!-- placeholder hero image (replace with real asset) -->
+          <img src="assets/hero-truck.jpg" alt="Truck loading fresh produce" class="hero-image">
+          <div class="hero-stats">
+            <div><strong>Avg Delivery Time</strong><span id="metric-time">45 min</span></div>
+            <div><strong>Estimated Spoilage Reduction</strong><span id="metric-spoil">30%+</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section id="problem" class="section container">
+      <h3 class="section-title">The Problem</h3>
+      <p class="section-sub">Farmers and wholesalers face delays, unreliable transport, and post-harvest spoilage that reduces income and limits market reach.</p>
+      <div class="problem-grid">
+        <div class="problem-card"><strong>Delays & Missed Markets</strong><p>Late pickup means lost sales.</p></div>
+        <div class="problem-card"><strong>Poor Vehicle Matching</strong><p>Wrong vehicle size leads to multiple trips or spoilage.</p></div>
+        <div class="problem-card"><strong>Cash & Trust Issues</strong><p>Unsecure payments and lack of traceability.</p></div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section how container" aria-labelledby="how-title">
+      <h3 id="how-title" class="section-title">How it Works — bolt-like flow</h3>
+      <div class="how-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Book</h4>
+          <p>Post load: crop type, weight, pickup time & destination (mobile/web).</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Match</h4>
+          <p>Proprietary matching algorithm assigns the nearest, best-fit vehicle.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Track</h4>
+          <p>Real-time GPS tracking keeps farmers informed during transit.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h4>Deliver</h4>
+          <p>Safely unload to market, warehouse, or processor using reusable crates.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <h4>Pay</h4>
+          <p>Secure digital payment and instant receipts; ratings & incentives for drivers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantage -->
+    <section id="advantage" class="section container">
+      <h3 class="section-title">Why AgriFluxus</h3>
+      <div class="adv-grid">
+        <div class="adv-card">
+          <h4>Spoilage Reduction Guarantee</h4>
+          <p>Optimized routing and vehicle matching reduce time in transit and spoilage rates — KPI tracked per pilot.</p>
+        </div>
+        <div class="adv-card">
+          <h4>Multi-Vehicle Fleet</h4>
+          <p>Motorbikes for small loads, vans for medium, trucks for bulk — cost efficient and scalable.</p>
+        </div>
+        <div class="adv-card">
+          <h4>Subscription & Wholesale Plans</h4>
+          <p>Priority slots, volume discounts, and dedicated account managers for distributors and warehouses.</p>
+        </div>
+        <div class="adv-card">
+          <h4>Rural Outreach</h4>
+          <p>Partnerships with farmer cooperatives and local extension agents to increase reach and trust.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section container">
+      <h3 class="section-title">What Farmers & Traders Say</h3>
+      <div class="test-grid">
+        <blockquote class="testimonial">
+          <p>"AgriFluxus reduced my tomato losses — driver arrived fast and my crate system keeps them fresh." <footer>— Small-Scale Farmer, Kano</footer></p>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"We fill trucks more efficiently now and saved on fuel and time." <footer>— Agro Distributor, Lagos</footer></p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Partners & Metrics -->
+    <section id="impact" class="section container">
+      <h3 class="section-title">Partners & Impact</h3>
+      <p class="section-sub">Trusted by local cooperatives — pilot metrics shown below.</p>
+      <div class="partner-row">
+        <img src="assets/partner1.png" alt="Cooperative logo" class="partner-logo">
+        <img src="assets/partner2.png" alt="Warehouse logo" class="partner-logo">
+        <img src="assets/partner3.png" alt="Market logo" class="partner-logo">
+      </div>
+
+      <div class="metrics">
+        <div class="metric"><strong id="metric-deliveries">1,200+</strong><span>Trips (pilot)</span></div>
+        <div class="metric"><strong id="metric-time-2">45 min</strong><span>Avg Delivery Time</span></div>
+        <div class="metric"><strong id="metric-spoil-2">30%+</strong><span>Avg Spoilage Reduction</span></div>
+      </div>
+    </section>
+
+    <!-- Wholesale / Subscription CTA -->
+    <section id="wholesale" class="section container cta-section">
+      <h3 class="section-title">Wholesale & Subscription Plans</h3>
+      <p>Custom plans for distributors and large buyers — volume pricing, priority, and dedicated logistics support.</p>
+      <a class="btn secondary" id="inquireWholesale" href="mailto:partnerships@agrifluxus.com?subject=Wholesale Inquiry">Inquire About Wholesale & Subscription Plans</a>
+    </section>
+
+    <!-- Driver CTA -->
+    <section class="section container">
+      <h3 class="section-title">Drive with AgriFluxus</h3>
+      <p>Join our verified transporter network — higher pay, better load matching, and skill training.</p>
+      <a class="btn primary" id="driverCTA" href="#driver-form">Drive with us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>AgriFluxus</strong> • Powering the flow of agriculture
+          <div class="footer-links">
+            <a href="privacy.html">Privacy</a> • <a href="terms.html">Terms</a>
+          </div>
+        </div>
+        <div class="footer-actions">
+          <a class="btn small" href="#driver-form">Drive with AgriFluxus</a>
+          <a class="btn transparent small" href="#wholesale">Partner</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
